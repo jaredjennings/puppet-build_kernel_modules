@@ -3,12 +3,15 @@
   "version": "0.1.0",
   "author": "Jared Jennings",
   "summary": "Make sure kernel modules can be built on a system",
-  "license": "Apache 2.0",
+  "license": "Apache-2.0",
   "source": "https://github.com/jaredjennings/puppet-build_kernel_modules",
   "project_page": "https://github.com/jaredjennings/puppet-build_kernel_modules",
   "issues_url": "https://github.com/jaredjennings/puppet-build_kernel_modules/issues",
   "dependencies": [
-    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+      { "name": "croddy/make",
+	"version_requirement": ">=0.0.5" },
+      { "name": "puppetlabs/gcc",
+	"version_requirement": ">=0.3.0 <0.4.0" },
   ]
 }
 
