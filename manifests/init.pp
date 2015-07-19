@@ -28,5 +28,6 @@ class build_kernel_modules {
   }
   package { $kernel_module_build_packages:
     ensure => installed,
+    allow_virtual => true,
   }
 }
